@@ -1,41 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Fredericka+the+Great&display=swap');
-
-body {
-   font-family: 'Lato', sans-serif;
-/*    font-size: 1.3em; */
-}
-
-h1 {
-   font-family: 'Fredericka the Great', cursive;
-   text-transform: uppercase;
-   font-size:  2.5em;
-
-}
-
-.f1 {
-   font-weight: 200;
-}
-.f2 {
-   font-weight: 300;
-}
-.f3 {
-   font-weight: 400;
-}
-.f4 {
-   font-weight: 500;
-}
-.f5 {
-   font-weight: 600;
-}
-.f6 {
-   font-weight: 700;
-}
-.f7 {
-   font-weight: 800;
-}
-.f8 {
-   font-weight: 900;
-}
+@import url(https://fonts.googleapis.com/css?family=Monofett);
 * {
     box-sizing: border-box;
 }
@@ -43,6 +6,7 @@ h1 {
 body {
     margin: 0px;
     font-family: 'Lato', sans-serif;
+    background-color: azure;
 }
 header, section {
     padding: 20px;
