@@ -27,7 +27,7 @@ body {
 }
 
 .article-image img {
-    max-width: auto;
+    max-width: 20px;
     height: auto;
     border-radius: 10px 10px 0 0;
 }
