@@ -15,11 +15,15 @@ p, li {
     line-height: 1.5em;
 }
 
-#inspiration {
-    background-color: #a1c783;
-    width: 300px;
-    border: 15px solid rgb(20, 96, 20);
-    margin: 20px;
-    padding-top: 40px;
-    padding-bottom: 40px;
+#inspiration 
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px; /* 5px rounded corners */
 }
+
+/* Add rounded corners to the top left and the top right corner of the image */
+img {
+  border-radius: 5px 5px 0 0;
+}
+
