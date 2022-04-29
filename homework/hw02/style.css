@@ -120,15 +120,15 @@ nav {
     justify-content: flex-start;
     gap: 50px;
     font-size: 18px;
-    line-height: 3rem;
+    /* line-height: 3rem; */
     word-spacing: 20px;
+    margin-left: 20px;
 }
 
 .selecteds {
-    text-decoration-line: underline;
-    text-decoration-color: green;
-    text-decoration-thickness: 5px;
-    text-decoration-style: solid;
+    border-bottom: green solid 4px;
+    padding-bottom: 2px;
+    margin-bottom: 5px;
 }
 
 .play-button{
@@ -190,11 +190,12 @@ article {
     flex-wrap: wrap;
     justify-content: flex-start;
     gap: 2rem;
+    margin-left: 20px;
 }
 
 .images {
-    width: 19vh;
-    height: 19vh;
+    width: 70%;
+    height: 60%;
     object-fit: cover;
     border-radius: 50%;
     margin-left: 12.5%;
@@ -204,10 +205,14 @@ article {
     background: rgba(126, 121, 121, 0.203);
     border-radius: 10px;
     transition: 0.3s;
-    width: 19rem;
-    height: 25rem;
+    width: 23%;
+    height: 23%;
     padding: 2rem;
 }
+
+/* .card-footer {
+    line-height: 10%;
+} */
 
 .artist-card:hover {
     box-shadow: 0 4px 20px 0 rgba(34, 68, 123, 0.2);
@@ -225,14 +230,43 @@ article {
 /* Part D: Responsive UIs */
 /**************************/
 
-@media screen and (max-width: 1024px) {
-    main {
-        grid-template-rows: ;
+@media screen and (max-width: 1500px) {
+    .artist-card {
+        width: 48%;
     }
 }
 
-@media screen and (max-width: 760px) {
-    #sidebar {
-        display: none;
+@media screen and (max-width: 1200px) {
+    .artist-card {
+        width: 45%;
     }
+}
+
+@media screen and (max-width: 900px) {
+    .artist-card {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 724px) {
+    body {
+        overflow: hidden;
+        margin: 0px;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-areas: "main" "bottom";
+        height: 100vh;
+    }
+
+    .artist-card {
+        width: 100%;
+    }
+
+    header {
+        left:0px;
+        width: 100%;
+    }
+    
+    aside {
+    display: none;}
 }
