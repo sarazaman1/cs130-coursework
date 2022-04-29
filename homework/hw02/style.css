@@ -210,10 +210,6 @@ article {
     padding: 2rem;
 }
 
-/* .card-footer {
-    line-height: 10%;
-} */
-
 .artist-card:hover {
     box-shadow: 0 4px 20px 0 rgba(34, 68, 123, 0.2);
     cursor: pointer;
@@ -232,7 +228,7 @@ article {
 
 @media screen and (max-width: 1500px) {
     .artist-card {
-        width: 48%;
+        width: 28%;
     }
 }
 
