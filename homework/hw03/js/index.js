@@ -53,6 +53,7 @@ const showImage = (ev) => {
     const elem = ev.currentTarget;
     console.log(elem.style.backgroundImage);
     document.querySelector('.featured_image').style.backgroundImage = elem.style.backgroundImage;
+    currentIndex = parseInt(elem.dataset.index);
 };
 
 const showNext = (ev) => {
